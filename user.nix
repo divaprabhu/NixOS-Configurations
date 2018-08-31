@@ -6,6 +6,11 @@
     isNormalUser = true;
     home = "/home/dvp";
     description = "Divakar V Prabhu ";
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [
+      "wheel"
+      "networkmanager"
+      "vboxusers"
+      "libvirtd"
+    ];
   };
 }

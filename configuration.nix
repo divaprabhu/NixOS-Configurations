@@ -16,6 +16,8 @@
       ./service.nix
       ./pkg.nix
       ./user.nix
+      ./system.nix
+      ./virtualisation.nix
     ];
 
   # This value determines the NixOS release with which your system is to be
