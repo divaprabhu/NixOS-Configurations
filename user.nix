@@ -5,7 +5,8 @@
   users.users.dvp = {
     isNormalUser = true;
     home = "/home/dvp";
-    description = "Divakar V Prabhu ";
+    description = "Divakar V Prabhu";
+    shell = pkgs.zsh;
     extraGroups = [
       "wheel"
       "networkmanager"

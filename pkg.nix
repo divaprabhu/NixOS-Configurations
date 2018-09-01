@@ -14,9 +14,28 @@
     calligra
     plasma-nm 
     git
+    zsh
+    oh-my-zsh
+    nix-zsh-completions
+    python3
+    qbittorrent
+    clisp
+    clangStdenv
+    wireshark
   ];
 
+  # shell setup
   programs.bash.enableCompletion = true;
+  programs.zsh.enable = true;
+
+  # oh my zsh
+  programs.zsh.interactiveShellInit = ''
+  export ZSH=${pkgs.oh-my-zsh}/share/oh-my-zsh/
+  ZSH_THEME="gentoo"
+  plugins=(git)
+  source $ZSH/oh-my-zsh.sh
+  '';
+  programs.zsh.promptInit = ""; # Clear this to avoid a conflict with oh-my-zsh
 
   # broadcom wifi driver
   nixpkgs.config.allowUnfree = true;
