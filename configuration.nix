@@ -15,7 +15,6 @@
       ./timezone.nix
       ./service.nix
       ./pkg.nix
-      ./user.nix
       ./system.nix
       ./virtualisation.nix
     ];
